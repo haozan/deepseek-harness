@@ -1,0 +1,24 @@
+{
+  "formatVersion": 2,
+  "roots": [
+    {"key":"event:document-review/recognition-request","kind":"event","event":"document-review/recognition-request","surface":false,"digest":"0d8c54e8e6712d2e1727256831f601a60a84dab1201dce48cc48154d55c7d35f"}
+  ],
+  "types": [],
+  "nodes": {
+    "0657d3ca5ac4e7bf": {"kind":"primitive","type":"number"},
+    "0d8c54e8e6712d2e": {"kind":"object","properties":[{"name":"data","type":"ebc929c72bcc4b69","optional":false},{"name":"ignorable","type":"dacf3d5f3e4ff619","optional":true},{"name":"seq","type":"0657d3ca5ac4e7bf","optional":false},{"name":"time","type":"0657d3ca5ac4e7bf","optional":false},{"name":"type","type":"62effac549603629","optional":false}],"indices":[]},
+    "0f46153645c29784": {"kind":"object","properties":[{"name":"height","type":"0657d3ca5ac4e7bf","optional":false},{"name":"width","type":"0657d3ca5ac4e7bf","optional":false}],"indices":[]},
+    "12d5808fac1996b9": {"kind":"object","properties":[{"name":"attachment","type":"b0b0eb1b16490f6b","optional":false},{"name":"offloaded","type":"dacf3d5f3e4ff619","optional":true},{"name":"type","type":"fb8b6a2e53cb9cf4","optional":false}],"indices":[]},
+    "2f1e6a7ebace43d7": {"kind":"union","types":["3f74ba74acd10644","58f94390b982f8a5","de30b1fa12c75f81","ebb768d85ec87fb6"]},
+    "3f74ba74acd10644": {"kind":"literal","value":"image/jpeg"},
+    "4cd48f3e5108bd6e": {"kind":"primitive","type":"string"},
+    "58f94390b982f8a5": {"kind":"literal","value":"image/png"},
+    "62effac549603629": {"kind":"literal","value":"document-review/recognition-request"},
+    "b0b0eb1b16490f6b": {"kind":"object","properties":[{"name":"attachmentId","type":"4cd48f3e5108bd6e","optional":false},{"name":"bytes","type":"0657d3ca5ac4e7bf","optional":false},{"name":"height","type":"0657d3ca5ac4e7bf","optional":false},{"name":"mediaType","type":"2f1e6a7ebace43d7","optional":false},{"name":"name","type":"4cd48f3e5108bd6e","optional":true},{"name":"originalDimensions","type":"0f46153645c29784","optional":true},{"name":"width","type":"0657d3ca5ac4e7bf","optional":false}],"indices":[]},
+    "dacf3d5f3e4ff619": {"kind":"literal","value":true},
+    "de30b1fa12c75f81": {"kind":"literal","value":"image/gif"},
+    "ebb768d85ec87fb6": {"kind":"literal","value":"image/webp"},
+    "ebc929c72bcc4b69": {"kind":"object","properties":[{"name":"input","type":"12d5808fac1996b9","optional":false},{"name":"maxTokens","type":"0657d3ca5ac4e7bf","optional":false},{"name":"model","type":"4cd48f3e5108bd6e","optional":false},{"name":"provider","type":"4cd48f3e5108bd6e","optional":false},{"name":"reasoningEffort","type":"4cd48f3e5108bd6e","optional":true},{"name":"system","type":"4cd48f3e5108bd6e","optional":false}],"indices":[]},
+    "fb8b6a2e53cb9cf4": {"kind":"literal","value":"image"}
+  }
+}

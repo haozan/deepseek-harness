@@ -50,6 +50,7 @@ The kernel packages boot and serve the page; the UI feature packages present it.
 | [`ui-sidebar-browser/`](ui-sidebar-browser/README.md) | Browses sandboxed HTTP(S) pages, including loopback services, in right-Sidebar tabs | — |
 | [`resources/`](resources/README.md) | Unified resource model: protocol providers behind the `useResource` session standard hook | `ctx.resources` |
 | [`ui-sidebar-files/`](ui-sidebar-files/README.md) | The workspace files page and one workspace tree per pane beside docked and floating previews | — |
+| [`ui-sidebar-review/`](ui-sidebar-review/README.md) | Desktop screenshots of document previews with links back to source files | — |
 | [`ui-brand-official/`](ui-brand-official/README.md) | Fills the generic browser-brand slots with the official name and marks | — |
 | [`ui-workspace/`](ui-workspace/README.md) | Provides workspace selection and creation surfaces | — |
 | [`ui-conversation/`](ui-conversation/README.md) | Presents the active conversation and its input surface | — |

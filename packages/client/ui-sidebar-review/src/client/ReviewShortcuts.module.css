@@ -1,0 +1,9 @@
+.shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  width: calc(100% - 2 * var(--dsh-composer-side-clearance));
+  max-width: var(--dsh-composer-card-max-width);
+  margin-inline: auto;
+}

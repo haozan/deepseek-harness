@@ -1,0 +1,61 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/client/ui-sidebar-review/README.md
+/:
+  en: f27b4f53b5287fa2
+  zh: 0c2c659e19954b39
+/deepseek-ai-dsh-client-ui-sidebar-review:
+  en: dde19f2b92a6d6f9
+  zh: fb60ccce6a7361bc
+/deepseek-ai-dsh-client-ui-sidebar-review/summary:
+  en: a9489ca7459bf578
+  zh: a98a34b0584e40c2
+/deepseek-ai-dsh-client-ui-sidebar-review/table-of-contents:
+  en: 3460b3e585e0c020
+  zh: e4d965dfbf7dd9dc
+/deepseek-ai-dsh-client-ui-sidebar-review/use-this-package:
+  en: 8acb221fe186480a
+  zh: 1e6c3ca0461e2a48
+/deepseek-ai-dsh-client-ui-sidebar-review/use-this-package/back-up-and-move-a-review:
+  en: 4128054f10a12327
+  zh: 617dace7ecf2fbc7
+/deepseek-ai-dsh-client-ui-sidebar-review/use-this-package/load-the-plugin-from-a-source-checkout:
+  en: faddc5a714579bf0
+  zh: 463c16bf247c85e6
+/deepseek-ai-dsh-client-ui-sidebar-review/understand-the-implementation:
+  en: 8aa67bd152edb2a0
+  zh: 3addcd7ab500a111
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/transcript-questions:
+  en: 70b6b9f009d5151b
+  zh: 5895c9fc0e38e349
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/transcript-questions/what-the-model-sees:
+  en: 2495e8556921b252
+  zh: f18680d6873f2e85
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/transcript-questions/token-effect:
+  en: 96ef3cf8fcf8a60d
+  zh: 70c87119c1539df1
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/transcript-questions/kv-cache-effect:
+  en: e06687b8144ce59f
+  zh: 8cf6e42df58ccd24
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/screenshot-recognition:
+  en: b8684639ae18c7e1
+  zh: e2652653ede60d89
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/screenshot-recognition/what-the-model-sees:
+  en: 8306c1ed4b57908e
+  zh: 90709358fc932e75
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/screenshot-recognition/token-effect:
+  en: 4df956090e1aca65
+  zh: d10ff0cfd617c753
+/deepseek-ai-dsh-client-ui-sidebar-review/model-experience/screenshot-recognition/kv-cache-effect:
+  en: 2ab3cf2caea9185e
+  zh: 75570d65218e576e
+/deepseek-ai-dsh-client-ui-sidebar-review/known-limitations-and-deferred-work:
+  en: cc8994cd2fc8f794
+  zh: b07d460a448ba7d6
+/deepseek-ai-dsh-client-ui-sidebar-review/known-limitations-and-deferred-work/dev-note:
+  en: 7912e3c566fd22b5
+  zh: 035030f51fd99021

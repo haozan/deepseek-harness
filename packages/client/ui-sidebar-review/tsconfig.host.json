@@ -1,0 +1,65 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib/types",
+    "tsBuildInfoFile": "lib/tsconfig.host.tsbuildinfo"
+  },
+  "files": [
+    "src/index.ts",
+    "src/types.ts",
+    "src/archive-format.ts",
+    "src/archive-host.ts",
+    "src/review-tool.ts",
+    "src/transcript.ts",
+    "src/transcript-codec.ts",
+    "src/workbench.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../vendor/cordis"
+    },
+    {
+      "path": "../../../vendor/schemastery"
+    },
+    {
+      "path": "../../attachment/attachment"
+    },
+    {
+      "path": "../../core/session"
+    },
+    {
+      "path": "../../llm/llm"
+    },
+    {
+      "path": "../../util/timeout"
+    },
+    {
+      "path": "../../typert/protocol"
+    },
+    {
+      "path": "../../util/atomic-write"
+    },
+    {
+      "path": "../../workspace/workspace"
+    },
+    {
+      "path": "../../api/remote-access/tsconfig.host.json"
+    },
+    {
+      "path": "../../fs/fs"
+    },
+    {
+      "path": "../../core/tools"
+    },
+    {
+      "path": "../../util/error"
+    },
+    {
+      "path": "../../util/crypto"
+    },
+    {
+      "path": "../../util/brand"
+    }
+  ]
+}

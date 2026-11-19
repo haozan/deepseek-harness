@@ -728,6 +728,29 @@ export interface Config {
 ```
 <!-- END GENERATED config-catalog:@deepseek-ai/dsh-client-ui-sidebar-documentpreview -->
 
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-client-ui-sidebar-review -->
+<a id="deepseek-aidsh-client-ui-sidebar-review"></a>
+
+## `@deepseek-ai/dsh-client-ui-sidebar-review`
+
+- `inject`: `llm` · `attachments` · `sessions` · `typert` · `workspaceRegistry` · `remoteAccess` · `fs` · `tools`
+- `source`: [`packages/client/ui-sidebar-review/src/index.ts:37`](../packages/client/ui-sidebar-review/src/index.ts)
+
+```ts config-catalog
+/** Model route and request limits for Desktop screenshot recognition. */
+export interface Config {
+  /** Configured LLM provider that accepts screenshot input. */
+  readonly provider: string
+  /** Vision model identifier within the configured provider. */
+  readonly model: string
+  /** Maximum duration of one screenshot request in milliseconds. */
+  readonly timeoutMs: number
+  /** Maximum number of output tokens for one screenshot. */
+  readonly maxTokens: number
+}
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-client-ui-sidebar-review -->
+
 <!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-client-ui-theme -->
 <a id="deepseek-aidsh-client-ui-theme"></a>
 

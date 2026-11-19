@@ -9,8 +9,8 @@
   en: 1387c4505dde2faf
   zh: 48570fa1c13d6910
 /session-persistence-event-catalog/persistence-type-fingerprints:
-  en: 35ffb6107a5fbae2
-  zh: 06ce2128075e157b
+  en: 2e2cd157cc029886
+  zh: c9563f3f30d1073c
 /session-persistence-event-catalog/event-envelope:
   en: 189352d7a3bba620
   zh: 5361f42035034672
@@ -86,6 +86,12 @@
 /session-persistence-event-catalog/events/developer/developer-message-surface:
   en: fd716cfc669a05a0
   zh: 8693a334958ab3cf
+/session-persistence-event-catalog/events/document-review:
+  en: 70293e40bc715d5e
+  zh: 70293e40bc715d5e
+/session-persistence-event-catalog/events/document-review/document-review-recognition-request-log-only:
+  en: daeb3a2131b8014c
+  zh: 5e94582abd5f5da8
 /session-persistence-event-catalog/events/feedback:
   en: f50dbac6867fa64d
   zh: f50dbac6867fa64d
@@ -471,8 +477,11 @@
   en: aae8924fd5eb9013
   zh: aae8924fd5eb9013
 /session-persistence-event-catalog/resolved-persistence-types/disposed:
-  en: d951a060b1ab706f
-  zh: d951a060b1ab706f
+  en: ee5d923994c4e4a5
+  zh: ee5d923994c4e4a5
+/session-persistence-event-catalog/resolved-persistence-types/document-review-recognition-request:
+  en: 1eee2d85ab3224b4
+  zh: 1eee2d85ab3224b4
 /session-persistence-event-catalog/resolved-persistence-types/dsh-session-title-llm:
   en: 96f8cc5bfe68cf1e
   zh: 96f8cc5bfe68cf1e
@@ -1200,8 +1209,11 @@
   en: 544039047a28b6bb
   zh: c691f0bb1e23db08
 /session-persistence-event-catalog/resolved-persistence-types/requestheaderreason:
-  en: 1f691c223f54ab2c
-  zh: f88fef3ee9745c91
+  en: 31d81bcdefba22c3
+  zh: cb13faabf823f214
+/session-persistence-event-catalog/resolved-persistence-types/reviewrecognitionrequest:
+  en: 69f9fd4fe186e6a4
+  zh: 53bbbc7a3b390c1a
 /session-persistence-event-catalog/resolved-persistence-types/sandboxmode:
   en: 5adc2bf6745ccc67
   zh: 566cb9aaa4a177c9
@@ -2040,8 +2052,11 @@
   en: 6b632a8f70a45496
   zh: ad6c793e41731fd7
 /session-persistence-event-catalog/resolved-persistence-types/type-disabled:
-  en: 585627a50ece4e5f
-  zh: 157837aee3da0ac3
+  en: 12993a75e6a4787f
+  zh: fbdfe27d5f1affe9
+/session-persistence-event-catalog/resolved-persistence-types/type-document-review-recognition-request:
+  en: 6d85eff0f7270914
+  zh: eefd90970efdc5b0
 /session-persistence-event-catalog/resolved-persistence-types/type-feedback-message-delete:
   en: 204561e2311db97e
   zh: 77264396bd5e25c4

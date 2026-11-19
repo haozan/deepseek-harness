@@ -1,0 +1,8 @@
+version: 1
+scenario: review-transcript
+profile: web
+composition: web-review-transcript
+recording: authored
+header:
+  class: web-review-transcript
+  pin: true

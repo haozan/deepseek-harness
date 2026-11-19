@@ -37,6 +37,7 @@ The [format references](persistence-changes/historical-formats/README.md) cover 
 | `event:compaction/summary` | event | `e2f9a41e0989f54ed8cee80f8db2bcf9d60a5c810dc9d45b83fa050b9dce7602` | [`{ type: "compaction/summary" }`](#persistence-type-sha256-e2f9a41e0989f54ed8cee80f8db2bcf9d60a5c810dc9d45b83fa050b9dce7602) |
 | `event:deliverables/presented` | event | `13d3d180f977bf78081d487ffa0ecb75857349bcab29a5a3fb48189fca2a6176` | [`{ type: "deliverables/presented" }`](#persistence-type-sha256-13d3d180f977bf78081d487ffa0ecb75857349bcab29a5a3fb48189fca2a6176) |
 | `event:developer/message` | event | `510826cf4e1f9220d75c1efd90b349dd9a77fc5ba15d19e16f87e85a48db5f99` | [`{ type: "developer/message" }`](#persistence-type-sha256-510826cf4e1f9220d75c1efd90b349dd9a77fc5ba15d19e16f87e85a48db5f99) |
+| `event:document-review/recognition-request` | event | `0d8c54e8e6712d2e1727256831f601a60a84dab1201dce48cc48154d55c7d35f` | [`{ type: "document-review/recognition-request" }`](#persistence-type-sha256-0d8c54e8e6712d2e1727256831f601a60a84dab1201dce48cc48154d55c7d35f) |
 | `event:feedback/message-delete` | event | `3ee93b06f3a125850337602bcdf155d2538c43a5c944ec55b1b3c365152d6796` | [`{ type: "feedback/message-delete" }`](#persistence-type-sha256-3ee93b06f3a125850337602bcdf155d2538c43a5c944ec55b1b3c365152d6796) |
 | `event:feedback/message-put` | event | `b5086d249e8502e9ead1d39156bb8d559bde7951cac0f14ce150345b4e42a2bf` | [`{ type: "feedback/message-put" }`](#persistence-type-sha256-b5086d249e8502e9ead1d39156bb8d559bde7951cac0f14ce150345b4e42a2bf) |
 | `event:feedback/record` | event | `b54940ff095c17e874c5be03815f4c2145a256cf3a1d34dae4ab2f7769dfffe8` | [`{ type: "feedback/record" }`](#persistence-type-sha256-b54940ff095c17e874c5be03815f4c2145a256cf3a1d34dae4ab2f7769dfffe8) |
@@ -509,6 +510,19 @@ Source: [`packages/deliverables/tool-present/src/types.ts:15`](../packages/deliv
 ```
 
 Source: [`packages/core/session/src/types.ts:317`](../packages/core/session/src/types.ts)
+
+### `document-review/*`
+
+<a id="document-reviewrecognition-request--log-only"></a>
+
+#### `document-review/recognition-request` — log-only
+
+```ts persistence-catalog
+/** Records the screenshot and resolved inputs for one auxiliary transcription request. @param data - exact request inputs. */
+'document-review/recognition-request': ReviewRecognitionRequest
+```
+
+Source: [`packages/client/ui-sidebar-review/src/index.ts:22`](../packages/client/ui-sidebar-review/src/index.ts)
 
 ### `feedback/*`
 
@@ -1783,6 +1797,14 @@ SHA-256: `26c879bdd130e8b8683a6ce588414fad2244783d6573ca399fa0de184a2b0bb1`
 SHA-256: `b38f206d59bad891fa58c89f97a0036987b3defe7685acbd318fa55eb85f9751`
 
 `"disposed"`
+
+<a id="persistence-type-sha256-62effac54960362951ac89bde273e53ed30cbd0b8424e14c0f45715b8c7aaef5"></a>
+
+### `"document-review/recognition-request"`
+
+SHA-256: `62effac54960362951ac89bde273e53ed30cbd0b8424e14c0f45715b8c7aaef5`
+
+`"document-review/recognition-request"`
 
 <a id="persistence-type-sha256-23af3759678a30de1d11d946772da8c051c63caa67997c5da05d30d7a9fe8a97"></a>
 
@@ -4608,6 +4630,27 @@ One of:
 - `"initial"`
 - `"resume"`
 - `"series"`
+
+<a id="persistence-type-sha256-ebc929c72bcc4b697225da2c8c6c9f2b9fe32117fcf0ef0bc92b72257931215d"></a>
+
+<a id="persistence-type-packagesclientui-sidebar-reviewsrcindextsreviewrecognitionrequest"></a>
+
+<a id="persistence-type-reviewrecognitionrequest"></a>
+
+### `ReviewRecognitionRequest`
+
+SHA-256: `ebc929c72bcc4b697225da2c8c6c9f2b9fe32117fcf0ef0bc92b72257931215d`
+
+Sources: [`packages/client/ui-sidebar-review/src/index.ts:27`](../packages/client/ui-sidebar-review/src/index.ts)
+
+| Property | Presence | Type |
+|---|---|---|
+| `input` | required | [`ImageBlock`](#persistence-type-sha256-12d5808fac1996b9b3c2afa806e03022252ba2d7b88f835862ae1896591f60c7) |
+| `maxTokens` | required | `number` |
+| `model` | required | `string` |
+| `provider` | required | `string` |
+| `reasoningEffort` | optional | `string` |
+| `system` | required | `string` |
 
 <a id="persistence-type-sha256-fab2bb09bc5e3b9db0685e8f5500b029af1a2b33e70bc703c1d5d0f596fbc1fd"></a>
 
@@ -8493,6 +8536,22 @@ Sources: [`packages/web/web-search-deepseek/src/provider.ts:82`](../packages/web
 | Property | Presence | Type |
 |---|---|---|
 | `type` | required | `"disabled"` |
+
+<a id="persistence-type-sha256-0d8c54e8e6712d2e1727256831f601a60a84dab1201dce48cc48154d55c7d35f"></a>
+
+<a id="persistence-type-eventdocument-reviewrecognition-request"></a>
+
+### `{ type: "document-review/recognition-request" }`
+
+SHA-256: `0d8c54e8e6712d2e1727256831f601a60a84dab1201dce48cc48154d55c7d35f`
+
+| Property | Presence | Type |
+|---|---|---|
+| `data` | required | [`ReviewRecognitionRequest`](#persistence-type-sha256-ebc929c72bcc4b697225da2c8c6c9f2b9fe32117fcf0ef0bc92b72257931215d) |
+| `ignorable` | optional | `true` |
+| `seq` | required | `number` |
+| `time` | required | `number` |
+| `type` | required | `"document-review/recognition-request"` |
 
 <a id="persistence-type-sha256-3ee93b06f3a125850337602bcdf155d2538c43a5c944ec55b1b3c365152d6796"></a>
 

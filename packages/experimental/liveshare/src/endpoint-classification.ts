@@ -137,6 +137,13 @@ export const VIEWER_ENDPOINT_CLASSES = {
   'workspace/unpinSession': 'owner-only', // owner unpins a Session
   'workspaceFiles/changes': 'owner-only', // owner Workspace file access
   'workspaceFiles/list': 'owner-only', // owner Workspace file access'
+  'documentReview/recognize': 'owner-only',
+  'documentReview/listArchives': 'owner-only',
+  'documentReview/readArchive': 'owner-only',
+  'documentReview/commitArchive': 'owner-only',
+  'documentReview/putImage': 'owner-only',
+  'documentReview/readImage': 'owner-only',
+  'documentReview/sourceState': 'owner-only',
   'workspaceFiles/read': 'owner-only', // absolute paths reach files outside the Workspace, so no share offers it
   'workspaceFiles/readBytes': 'owner-only', // absolute paths reach files outside the Workspace, so no share offers it
   'workspaceFiles/search': 'owner-only', // owner Workspace file access

@@ -35,6 +35,7 @@ export const KNOWN_SESSION_EVENT_TYPES: ReadonlySet<string> = new Set([
   'compaction/summary',
   'deliverables/presented',
   'developer/message',
+  'document-review/recognition-request',
   'feedback/message-delete',
   'feedback/message-put',
   'feedback/record',

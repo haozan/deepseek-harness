@@ -1,0 +1,8 @@
+- insert:
+    - id: ui-sidebar-review
+      name: '@deepseek-ai/dsh-client-ui-sidebar-review'
+      config:
+        provider: deepseek-account
+        model: deepseek-flash
+        timeoutMs: 90000
+        maxTokens: 4096

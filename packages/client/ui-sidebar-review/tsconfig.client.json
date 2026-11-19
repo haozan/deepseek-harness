@@ -1,0 +1,79 @@
+{
+  "extends": "../../../tsconfig.base.client.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib/types",
+    "tsBuildInfoFile": "lib/tsconfig.client.tsbuildinfo"
+  },
+  "include": [
+    "src/client",
+    "src/archive-format.ts",
+    "src/types.ts",
+    "src/css-modules.d.ts",
+    "src/transcript.ts",
+    "src/transcript-codec.ts",
+    "src/workbench.ts"
+  ],
+  "references": [
+    {
+      "path": "../../../vendor/cordis"
+    },
+    {
+      "path": "../locale/tsconfig.client.json"
+    },
+    {
+      "path": "../store"
+    },
+    {
+      "path": "../ui-primitives"
+    },
+    {
+      "path": "../ui-conversation/tsconfig.client.json"
+    },
+    {
+      "path": "../ui-sidebar-right"
+    },
+    {
+      "path": "../ui-sidebar-documentpreview/tsconfig.client.json"
+    },
+    {
+      "path": "../ui-slots"
+    },
+    {
+      "path": "../../util/workspace-path"
+    },
+    {
+      "path": "../ui-renderer"
+    },
+    {
+      "path": "../../api/remotes/tsconfig.client.json"
+    },
+    {
+      "path": "../ui-file-actions"
+    },
+    {
+      "path": "../../core/session"
+    },
+    {
+      "path": "../../util/crypto"
+    },
+    {
+      "path": "../../api/session-controller/tsconfig.client.json"
+    },
+    {
+      "path": "../../api/workspace-controller/tsconfig.client.json"
+    },
+    {
+      "path": "../ui-layout"
+    },
+    {
+      "path": "../ui-sidebar"
+    },
+    {
+      "path": "../ui-workspace"
+    },
+    {
+      "path": "../../util/brand"
+    }
+  ]
+}

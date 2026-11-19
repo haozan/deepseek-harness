@@ -84,6 +84,10 @@ const PEER_REQUIRED_HOST_EXPORTS = {
   '@deepseek-ai/dsh-tool-executor-ptc/run-code': ['RunCodeConfig', 'createRunCodeTool'],
   // CUA checks UserQuestionError and preserves AttachmentError from image admission.
   '@deepseek-ai/dsh-attachment': ['admitEncodedImages'],
+  // Review recognition assembles and raises the installed provider's stream blocks and failures.
+  '@deepseek-ai/dsh-llm': ['BlockAssembler', 'createUserMessage', 'LlmError'],
+  // Review tool schemas and typed failures use the installed registry's validation pipeline.
+  '@deepseek-ai/dsh-tools': ['defineTool', 'ToolArgsError', 'ToolContextUnavailableError'],
   '@deepseek-ai/dsh-user-questions': ['UserQuestionError'],
   // The tool registry and every subclass rely on `instanceof` against one HarnessError class.
   '@deepseek-ai/dsh-error': ['HarnessError'],

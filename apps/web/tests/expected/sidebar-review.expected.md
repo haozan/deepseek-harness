@@ -1,0 +1,155 @@
+- region "Review":
+  - navigation "Folders":
+    - text: Moved to position 1 of 2
+    - list:
+      - listitem:
+        - button "Review transcript"
+        - button "Folder actions for Review transcript"
+        - list:
+          - listitem:
+            - button "Contract"
+            - button "Folder actions for Contract"
+          - listitem:
+            - button "Collapse Payment" [expanded]
+            - button "Payment"
+            - button "Folder actions for Payment"
+          - listitem:
+            - button "证据材料编号ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789逐页核对记录及补充说明"
+            - button "Folder actions for 证据材料编号ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789逐页核对记录及补充说明"
+          - listitem:
+            - button "Bank"
+            - button "Folder actions for Bank"
+          - listitem:
+            - button "Unfiled"
+  - separator "Resize folder tree"
+  - button "Hide folder tree" [expanded]
+  - button "Select cards"
+  - button "Recognize all"
+  - switch "Auto OCR"
+  - text: Auto OCR
+  - switch "Show source"
+  - text: Show source
+  - button "Export"
+  - text: Moved to position 1 of 2
+  - heading "Review transcript" [level=1]
+  - heading "Contract" [level=2]
+  - heading "Payment" [level=2]:
+    - button "Payment" [expanded]
+  - heading "证据材料编号ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789逐页核对记录及补充说明" [level=3]
+  - heading "Bank" [level=3]:
+    - button "Bank" [expanded]
+  - list:
+    - listitem:
+      - button "Drag to reorder or use arrow keys"
+      - button "Open example.txt"
+      - button "Text recognized" [disabled]
+      - button "Discuss with AI"
+      - button "Change color"
+      - textbox "Card text": "Compare with the contract Transfer amount: 100"
+    - listitem:
+      - button "Drag to reorder or use arrow keys"
+      - button "Open example.txt"
+      - button "Text recognized" [disabled]
+      - button "Discuss with AI"
+      - button "Change color"
+      - textbox "Card text": Second screenshot text
+  - heading "Unfiled" [level=2]:
+    - button "Unfiled" [expanded]
+  - list:
+    - listitem:
+      - button "Drag to reorder or use arrow keys"
+      - button "Open example.txt"
+      - button "Recognize text"
+      - button "Discuss with AI"
+      - button "Change color"
+      - button "Card text"
+- region "Review":
+  - navigation "Folders":
+    - list:
+      - listitem:
+        - button "Review transcript"
+        - button "Folder actions for Review transcript"
+        - list:
+          - listitem:
+            - button "Contract"
+            - button "Folder actions for Contract"
+          - listitem:
+            - button "Collapse Payment" [expanded]
+            - button "Payment"
+            - button "Folder actions for Payment"
+          - listitem:
+            - button "证据材料编号ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789逐页核对记录及补充说明"
+            - button "Folder actions for 证据材料编号ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789逐页核对记录及补充说明"
+          - listitem:
+            - button "Bank"
+            - button "Folder actions for Bank"
+          - listitem:
+            - button "Unfiled"
+  - separator "Resize folder tree"
+  - button "Hide folder tree" [expanded]
+  - button "Select cards"
+  - button "All recognized" [disabled]
+  - switch "Auto OCR"
+  - text: Auto OCR
+  - switch "Show source"
+  - text: Show source
+  - button "Export"
+  - list:
+    - listitem:
+      - button "Drag to reorder or use arrow keys"
+      - button "Open example.txt"
+      - button "Text recognized" [disabled]
+      - button "Discuss with AI"
+      - button "Change color"
+      - textbox "Card text": "Compare with the contract Transfer amount: 100"
+    - listitem:
+      - button "Drag to reorder or use arrow keys"
+      - button "Open example.txt"
+      - button "Text recognized" [disabled]
+      - button "Discuss with AI"
+      - button "Change color"
+      - textbox "Card text": Second screenshot text
+- dialog "Delete folder?":
+  - heading "Delete folder?" [level=2]
+  - button "Close"
+  - paragraph: Delete “Payment” and its subfolders. Their cards will move to Unfiled. Screenshots and card text will be kept.
+  - button "Cancel"
+  - button "Delete folder"
+- menu:
+  - menuitem "Text and images"
+  - menuitem "Text only"
+Bank outline: nested heading, guide visible, editable text in place of screenshot
+- menu:
+  - menuitem "No color"
+  - menuitem "Yellow"
+  - menuitem "Red"
+  - menuitem "Green"
+  - menuitem "Blue"
+  - menuitem "Purple"
+Frame return expanded both chapters and highlighted clip:2
+PDF page 2 capture bounds (%): 25, 25, 25, 25
+- button "Recognize text"
+- button "Recognize all"
+- switch "Show source" [checked]
+- text: 【example】
+- switch "Auto OCR" [checked]
+- alert: Auto OCR uses a vision model for high-quality text recognition and consumes tokens for each screenshot.
+- textbox "Card text": Second screenshot text
+Overlapping source frames: Screenshot 1, Screenshot 2
+- button "Capture to review transcript"
+- button "Capture to evidence directory"
+- region "Evidence directory":
+  - list:
+    - listitem:
+      - button "Open review.png": review.png
+- button "Open review transcript"
+- button "Open evidence directory"
+- button "Use the transcript with AI"
+The docked review workspace shows Files on the left and both review tabs on the right, with manual fullscreen.
+Use the transcript with AI inserts a starter in an empty composer and preserves an existing draft.
+Start a review from a workspace creates a fresh review conversation after association.
+New Session in the active review workspace creates a fresh review conversation with its shortcuts.
+New Session outside the active review conversation opens a regular conversation without review shortcuts.
+Continue an existing review shows one row per workspace with saved review content and opens earlier reviews from its history.
+Continue an existing review follows session archive and unarchive, and hides reviews from removed workspaces.
+A copied workspace opens on a fresh Host and Client with editable OCR, evidence, and its original source rectangle.
