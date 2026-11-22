@@ -15,9 +15,8 @@ export const inject = ['slots', 'uiWorkspace', 'remoteAccess']
 
 /**
  * Client plugin body: while the current Peer may open the Host's directory
- * chooser, register the renderless native flow into both directory-flow holes
- * through `slots.inject()` because the ui-workspace entries may activate later
- * or replace their declarations.
+ * chooser, register the native flow into the standard Workspace and optional
+ * workbench directory-flow slots for as long as each declaration exists.
  * @param ctx - client root context.
  */
 export function apply(ctx: ClientContext): void {
@@ -29,8 +28,8 @@ export function apply(ctx: ClientContext): void {
   // Both declaration lifetimes must be live before the pair installs; the
   // generator makes the two registrations one transactional effect. The
   // outer/inner nesting order is arbitrary; neither hole has precedence.
-  ctx.remoteAccess.whenAccess('directoryPicker/pick', () =>
-    ctx.slots.inject('conversation.hero.workspace.directoryFlow', () =>
+  ctx.remoteAccess.whenAccess('directoryPicker/pick', function* () {
+    yield ctx.slots.inject('conversation.hero.workspace.directoryFlow', () =>
       ctx.slots.inject('sidebar.workspaces.directoryFlow', function* () {
         yield ctx.slots.register({
           name: 'conversation.hero.workspace.directoryFlow', inject: injected,
@@ -38,5 +37,9 @@ export function apply(ctx: ClientContext): void {
         yield ctx.slots.register({
           name: 'sidebar.workspaces.directoryFlow', inject: injected,
         }, NativeDirectoryFlow)
-      })))
+      }))
+    yield ctx.slots.inject('workbench.workspace.directoryFlow', () => ctx.slots.register({
+      name: 'workbench.workspace.directoryFlow', inject: injected,
+    }, NativeDirectoryFlow))
+  })
 }

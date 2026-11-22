@@ -1,0 +1,46 @@
+# Bilingual-pair consistency record for README.md (docs/i18n/README.md): per heading
+# section, a hash of its English and Chinese blocks outside code blocks and generated regions.
+# After editing either side, bring the other along and re-record with:
+#   pnpm run verify-translation-pairing --write packages/experimental/hongzhong/README.md
+/:
+  en: fbb32834376399d8
+  zh: 46afde7e8191d00e
+/deepseek-ai-dsh-hongzhong:
+  en: faf511c8b55e343c
+  zh: 0c50d09c331daf60
+/deepseek-ai-dsh-hongzhong/summary:
+  en: 82240d68d49d0645
+  zh: 5d0b2c8145ec547c
+/deepseek-ai-dsh-hongzhong/table-of-contents:
+  en: 76368b6b1da79c80
+  zh: a4255ddc7ae942eb
+/deepseek-ai-dsh-hongzhong/use-this-package:
+  en: a0c079bef443cf10
+  zh: e34ce126240bbdf5
+/deepseek-ai-dsh-hongzhong/understand-the-implementation:
+  en: f95c87ae4693fb27
+  zh: 2793cc51c7618a54
+/deepseek-ai-dsh-hongzhong/model-experience:
+  en: 215e7ba838619b7b
+  zh: a311da3843709f90
+/deepseek-ai-dsh-hongzhong/model-experience/current-article:
+  en: d2e7ad7ad4c062cc
+  zh: 6a4ce6d9e4329ee2
+/deepseek-ai-dsh-hongzhong/model-experience/current-article/what-the-model-sees:
+  en: ab1796e6870d715a
+  zh: caa9a6ea7602acbd
+/deepseek-ai-dsh-hongzhong/model-experience/current-article/what-the-model-sees/runtime-context:
+  en: 3c1b03426989f9ed
+  zh: 801a1aeec038582e
+/deepseek-ai-dsh-hongzhong/model-experience/current-article/token-effect:
+  en: fe586626e8abc225
+  zh: f62f6855d6c997b1
+/deepseek-ai-dsh-hongzhong/model-experience/current-article/kv-cache-effect:
+  en: 9ada811df5341b5d
+  zh: 6262c91955c4cae4
+/deepseek-ai-dsh-hongzhong/known-limitations-and-deferred-work:
+  en: 32ff09c01cc18566
+  zh: f19c0af82f85d21f
+/deepseek-ai-dsh-hongzhong/known-limitations-and-deferred-work/dev-note:
+  en: 782e08d496301a5a
+  zh: 3e3c2234ac41256d

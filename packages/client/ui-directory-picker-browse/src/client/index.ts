@@ -1,6 +1,6 @@
 /**
- * Browser half of the browse directory-picker backend: fills ui-workspace's
- * two directory-flow holes with the in-app Select Workspace Directory dialog
+ * Browser half of the browse directory-picker backend: fills Workspace
+ * directory-flow slots with the in-app Select Workspace Directory dialog
  * (figma `Harness` 813-23126 family), driving the node half's
  * `directoryPicker/list`/`directoryPicker/createDirectory` primitives.
  * Mounting this package therefore composes both sides of the browse
@@ -24,8 +24,8 @@ export const inject = ['slots', 'uiWorkspace', 'locale']
 
 /**
  * Client plugin body: register the dialog's dictionaries and the browse flow
- * into both directory-flow holes through `slots.inject()` because the
- * ui-workspace entries may activate later or replace their declarations.
+ * into the directory-flow slots through `slots.inject()` so a workbench
+ * can declare its launcher slot after the standard Workspace UI loads.
  * @param ctx - client root context.
  */
 export function apply(ctx: ClientContext): void {
@@ -182,4 +182,7 @@ export function apply(ctx: ClientContext): void {
         name: 'sidebar.workspaces.directoryFlow', inject: injected,
       }, BrowseDirectoryFlow)
     }))
+  ctx.slots.inject('workbench.workspace.directoryFlow', () => ctx.slots.register({
+    name: 'workbench.workspace.directoryFlow', inject: injected,
+  }, BrowseDirectoryFlow))
 }

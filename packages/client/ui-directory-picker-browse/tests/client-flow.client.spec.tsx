@@ -36,9 +36,9 @@ async function bench() {
   const createDirectory = vi.fn(async (path: string, name: string) => `${path}/${name}`)
   ctx.provide('uiWorkspace', { listDirectory, createDirectory } as never)
   const slots = ctx.get('slots') as SlotRegistry
-  const declare = () => slots.register({
+  const declare = (holes: readonly string[] = HOLES) => slots.register({
     name: 'root',
-    children: Object.fromEntries(HOLES.map(name => [name, { kind: 'single', scope: 'root' }])),
+    children: Object.fromEntries(holes.map(name => [name, { kind: 'single', scope: 'root' }])),
   } as never, () => null)
   return { ctx, slots, listDirectory, createDirectory, declare }
 }
@@ -52,6 +52,20 @@ function owner(overrides: Partial<DirectoryFlowOwnerProps> = {}): DirectoryFlowO
 }
 
 describe('directory-picker-browse client half', () => {
+  it('installs a workbench picker independently of the standard declarations', async () => {
+    const b = await bench()
+    const fiber = b.ctx.plugin({ inject: [...inject], apply })
+    await fiber.await()
+    const name = 'workbench.workspace.directoryFlow'
+    const undeclare = b.declare([name])
+    await Promise.resolve()
+    expect(b.slots.entries(name)).toHaveLength(1)
+    undeclare()
+    expect(b.slots.entries(name)).toHaveLength(0)
+    await fiber.dispose()
+    await b.ctx.fiber.dispose()
+  })
+
   it('declares the services it drives', () => {
     expect(inject).toEqual(['slots', 'uiWorkspace', 'locale'])
   })

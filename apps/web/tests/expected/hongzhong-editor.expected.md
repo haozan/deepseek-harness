@@ -1,0 +1,26 @@
+- region "WeChat article publishing":
+  - text: Articles
+  - combobox "Articles":
+    - option "2026-11-20_1902_写给读者的一封信" [selected]
+    - option "2026-11-19_1500_Second article"
+  - button "Refresh articles"
+  - text: Markdown body
+  - textbox "Markdown body": "# 写给读者的一封信 保留 **中文排版**。 > 这是一段引用。"
+  - button "Save Markdown" [disabled]
+  - region "Preview":
+    - heading "Preview" [level=2]
+    - text: Style
+    - combobox "Style":
+      - option "Classic" [selected]
+      - option "Editorial"
+      - option "Fresh"
+    - article:
+      - heading "写给读者的一封信" [level=1]
+      - paragraph:
+        - text: 保留
+        - strong: 中文排版
+        - text: 。
+      - blockquote:
+        - paragraph: 这是一段引用。
+  - button "Sync to draft box" [disabled]
+  - group: WeChat accounts

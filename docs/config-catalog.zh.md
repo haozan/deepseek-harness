@@ -1773,6 +1773,31 @@ export interface HmrConfig extends ChokidarOptions {
 ```
 <!-- END GENERATED config-catalog:@deepseek-ai/dsh-hmr -->
 
+<!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-hongzhong -->
+<a id="deepseek-aidsh-hongzhong"></a>
+
+## `@deepseek-ai/dsh-hongzhong`
+
+- `inject`: `typert` · `credentials` · `workspaceRegistry` · `fs` · `systemPrompt`
+- `source`: [`packages/experimental/hongzhong/src/index.ts:27`](../packages/experimental/hongzhong/src/index.ts)
+
+```ts config-catalog
+/** Workspace file bounds and WeChat request timeout. */
+export interface Config extends ArticleLimits {
+  /** Maximum duration of each request to WeChat, in milliseconds. */
+  readonly timeoutMs: number
+}
+
+/** Byte limits applied independently to Markdown and to the combined article images. */
+export interface ArticleLimits {
+  /** Maximum bytes of UTF-8 source in a single article.md file. */
+  readonly maxMarkdownBytes: number
+  /** Maximum combined source bytes of the cover and the body images. */
+  readonly maxImageBytes: number
+}
+```
+<!-- END GENERATED config-catalog:@deepseek-ai/dsh-hongzhong -->
+
 <!-- BEGIN GENERATED config-catalog:@deepseek-ai/dsh-hooks-claude-code -->
 <a id="deepseek-aidsh-hooks-claude-code"></a>
 

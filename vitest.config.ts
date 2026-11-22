@@ -372,6 +372,9 @@ export default defineConfig({
         // The forge panel entry imports its generated Remote contribution, which exists only in lib;
         // forge-panel.e2e.ts exercises the built entry, while source tests cover mountForgePanel.
         'packages/experimental/client-ui-forge/src/client/index.ts',
+        // The editor entry imports its generated Remote contribution, which exists only in lib.
+        // hongzhong-editor.e2e.ts exercises the built entry; source tests cover mountEditor.
+        'packages/experimental/hongzhong/src/client/index.ts',
         // Slash/command/input round: per-file gaps deferred with the same
         // client-lane debt. TODO(gui): cover and remove with the lane above.
         'packages/client/ui-commands/src/index.ts',
